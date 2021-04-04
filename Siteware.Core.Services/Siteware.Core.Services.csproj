@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Siteware.Core.Data\Siteware.Core.Data.csproj" />
+    <ProjectReference Include="..\Siteware.Core.DTO\Siteware.Core.DTO.csproj" />
+    <ProjectReference Include="..\Siteware.Core.Utils\Siteware.Core.Utils.csproj" />
+  </ItemGroup>
+
+</Project>
