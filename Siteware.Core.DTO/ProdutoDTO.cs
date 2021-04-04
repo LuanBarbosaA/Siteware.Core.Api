@@ -8,7 +8,7 @@ namespace Siteware.Core.DTO
     {
         public string Nome { get; set; }
         public DateTime DataEntrada { get; set; }
-        public PrecoDTO Preco { get; set; }
+        public IEnumerable<PrecoDTO> Preco { get; set; }
         public IEnumerable<PromocaoDTO>?  Promocao { get; set; }
     }
 }

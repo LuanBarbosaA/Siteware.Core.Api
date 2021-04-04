@@ -15,7 +15,7 @@ namespace Siteware.Core.Api.Controllers
     {
         private readonly IProdutoService produtoService;
 
-        ProdutoController(IProdutoService produto)
+        public ProdutoController(IProdutoService produto)
         {
             this.produtoService = produto;
         }

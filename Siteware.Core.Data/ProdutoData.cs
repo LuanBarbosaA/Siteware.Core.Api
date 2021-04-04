@@ -16,10 +16,8 @@ namespace Siteware.Core.Data
                 using (var context = new SITEWAREContext())
                 {
                     IEnumerable<Preco> precosProdutos = context.Precos.Include(x => x.FkProduto)
-                                                                            .Include(x => x.FkProduto.PromocaoProdutos.Select(x => new { x, x.FkPromocao })
-                                                                                                                              .AsEnumerable()
-                                                                                                                              .Select(x => x.FkPromocao)
-                                                                                                                              .ToList());
+                                                                            .Include(x => x.FkProduto.PromocaoProdutos)
+                                                                            .ThenInclude(x => x.FkPromocao);
                     return precosProdutos;
                 }
             }
