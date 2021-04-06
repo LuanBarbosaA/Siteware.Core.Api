@@ -25,5 +25,31 @@ namespace Siteware.Core.Api.Controllers
         {
             return produtoService.ObterProdutos();
         }
+
+        [HttpGet]
+        [Route("{id}")]
+        public ProdutoDTO ObterProduto(int id)
+        {
+            return produtoService.ObterProduto(id);
+        }
+
+        [HttpPost]
+        public void InserirProduto(ProdutoDTO produto)
+        {
+            produtoService.InserirProduto(produto);
+        }
+
+        [HttpPut]
+        public void AlterarProduto(ProdutoDTO produto)
+        {
+            produtoService.AlterarProduto(produto);
+        }
+
+        [HttpDelete]
+        [Route("{id}")]
+        public void RemoverProdutos(int id)
+        {
+            produtoService.RemoverProduto(id);
+        }
     }
 }

@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Siteware.Core.DTO\Siteware.Core.DTO.csproj" />
     <ProjectReference Include="..\Siteware.Core.Model\Siteware.Core.Model.csproj" />
   </ItemGroup>
 
